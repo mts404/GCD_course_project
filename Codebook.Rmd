@@ -2,7 +2,6 @@
 title: "Codebook"
 output: html_document
 ---
-# Codebook
 
 This is a codebook for the final production and output file for the Coursera 
 Getting and Cleaning Data course project. The output file is SamsungDataAverages.txt.
@@ -31,20 +30,8 @@ The remaining measurement variables are all MEANS of the specified mean or stand
 deviation (std) measurements, per SubjectID & Activity. Some of the variables 
 (where indicated) include X, Y, and Z axis movement data. 
 
-Please see the features_list.txt in the .zip data source file for further important information about the measurements. Here are the abbreviations used in the
-variable names:
-
-- time : time-based measurements
-- frequency: frequency-based measurements
-- Body : body movement measurement
-- Acc : acceleration measurement
-- Gravity : gravity measurement
-- Jerk : jerk movement measurement
-- Gyro : gyroscoping measurement
-- Mag : magnitude measurement
-- .X, .Y, .Z : the axis of movement
-
-Complete summary of all the measurement variables [with column numbers]:
+Each column contains a single measurement value for the unique SubjectID & Activity 
+pair. Here is a summary of all the measurement variables [with column numbers]:
 
 - [3-8] "timeBodyAcc" : mean and standard deviation means for X, Y, Z axis; time-based measurement for body acceleration  
 - [9-14] "timeGravityAcc" : mean and standard deviation means for X, Y, Z axis; time-based measurement for gravity acceleration         
@@ -63,3 +50,18 @@ Complete summary of all the measurement variables [with column numbers]:
 - [63-64] "frequencyBodyAccJerkMag" : mean and standard deviation means; frequency-based body acceleration jerk-movement magnitude     
 - [65-66] "frequencyBodyGyroMag" : mean and standard deviation means; frequency-based body gyroscopic movement magnitude        
 - [67-68] "frequencyBodyGyroJerkMag" : mean and standard deviation means; frequency-based body acceleration movement magnitude   
+
+Please see the features_list.txt in the .zip data source file for further important information about the measurements. Here are the abbreviations used in the
+variable names in the SamsungDataAverages.txt file:
+
+- time : time-based measurements
+- frequency: frequency-based measurements
+- Body : body movement measurement
+- Acc : acceleration measurement
+- Gravity : gravity measurement
+- Jerk : jerk movement measurement
+- Gyro : gyroscoping measurement
+- Mag : magnitude measurement
+- .mean : average of the means
+- .std: average of the standard deviations
+- .X, .Y, .Z : the axis of movement
