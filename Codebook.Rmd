@@ -1,0 +1,64 @@
+---
+title: "Codebook"
+output: html_document
+---
+
+This is a codebook for the final production and output file for the Coursera 
+Getting and Cleaning Data course project. The output file is SamsungDataAverages.txt.
+The accompanying Readme.md file provides more details on the R script and 
+production. The run_activity.R file is the R script. 
+
+The source data is from:
+<https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
+
+The zip source file contains measurement data, taken from subjects doing various
+activities while carrying a mobile phone which recorded their physical movement
+information. The zip source also includes text files with details 
+on the measurements. This Codebook is meant to augment that information and 
+not replace it.
+
+SamsungDataAverages.txt is produced by merging the measurement variables in the
+'test' and 'train' directories. Then the measurements which are Means and 
+Standard Deviations are extracted, and the Mean of those variables are calculated
+for each "Subject & Activity" pair. The following defines the columns in the
+tidy data set SamsungDataAverages.txt:
+
+- [1] "SubjectID" : The ID number representing a specific subject (of 30)
+- [2] "Activity" : Factor variable, indicating 1 of 6 activities: (WALKING,         WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING)
+
+The measurement variables are all MEANS of the specified mean or standard 
+deviation (std) measurements, per SubjectID & Activity. Some of the variables 
+(where indicated) include X, Y, and Z axis movement data. 
+
+Please see the features_list.txt in the .zip data source file for further important information about the measurements. Here are the abbreviations used in the
+variable names:
+
+- time : time-based measurements
+- frequency: frequency-based measurements
+- Body : body movement measurement
+- Acc : acceleration measurement
+- Gravity : gravity measurement
+- Jerk : jerk movement measurement
+- Gyro : gyroscoping measurement
+- Mag : magnitude measurement
+- .X, .Y, .Z : the axis of movement
+
+Summary of all the measurement variables [with column numbers]:
+
+- [3-8] "timeBodyAcc" : mean and standard deviation means for X, Y, Z axis; time-based measurement for body acceleration  
+- [9-14] "timeGravityAcc" : mean and standard deviation means for X, Y, Z axis; time-based measurement for gravity acceleration         
+- [15-20] "timeBodyAccJerk" : mean and standard deviation means for X, Y, Z, axis; time-based measurement for jerk-movement acceleration      
+- [21-26] "timeBodyGyro" : mean and standard deviation means for X, Y, Z, axis; time-based measurement for gyroscopic body movement          
+- [27-32] "timeBodyGyroJerk" : mean and standard deviation means for X, Y, Z, axis; time-based measurement for gyroscopic jerk-movement      
+- [33-34] "timeBodyAccMag.mean" : mean and standard deviation means; time-based body acceleration movement magnitude
+- [35-36] "timeGravityAccMag" : mean and standard deviation means; time-based body acceleration movement magnitude     
+- [37-38] "timeBodyAccJerkMag" : mean and standard deviation means; time-based body acceleration jerk-movement magnitude     
+- [39-40] "timeBodyGyroMag" : mean and standard deviation means; time-based body gyroscopic movement magnitude        
+- [41-42] "timeBodyGyroJerkMag" : mean and standard deviation means; time-based body acceleration movement magnitude    
+- [43-48] "frequencyBodyAcc" : mean and standard deviation means for X, Y, Z axis; frequency-based measurement for body acceleration  
+- [49-54] "frequencyBodyAccJerk" : mean and standard deviation means for X, Y, Z, axis; frequency-based measurement for jerk-movement acceleration      
+- [55-60] "frequencyBodyGyro" : mean and standard deviation means for X, Y, Z, axis; frequency-based measurement for gyroscopic body movement          
+- [61-62] "frequencyBodyAccMag" : mean and standard deviation means; frequency-based body acceleration movement magnitude
+- [63-64] "frequencyBodyAccJerkMag" : mean and standard deviation means; frequency-based body acceleration jerk-movement magnitude     
+- [65-66] "frequencyBodyGyroMag" : mean and standard deviation means; frequency-based body gyroscopic movement magnitude        
+- [67-68] "frequencyBodyGyroJerkMag" : mean and standard deviation means; frequency-based body acceleration movement magnitude   
