@@ -1,18 +1,17 @@
 ## GCD course project code
 ## This R file has a hard dependency on data from 
 ## https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-## (in this case downloaded April 20, 2015) This file much be unzipped in 
-## the working directory.  
+## (in this case downloaded April 20, 2015) 
+## NOTE: This file must be unzipped in the working directory.  
 ##
 ## This R code will read in data from the .txt files, and test & train directories. 
 ## The directories contain movement data from user tests with mobile phones. 
-## The observational data
-## will be bound to the corresponding subject (user) number, and the corresponding
+## Data will be bound to the corresponding subject (user) number, and the corresponding
 ## activity type. This data will also be subset to only contain the columns showing means
 ## and standard deviations. Then the data will be condensed to take the mean of these
 ## means and standard deviations, for each subject (user) for each activity.
 ##
-## The final result is then written to a local txt file. 
+## The final result is then written to a local txt file: SamsungDataAverages.txt 
 
 ## Clear local variables
 rm(list = ls())
@@ -57,7 +56,7 @@ dataCombined <- rbind(output_test, output_train)
 ##
 dataMeans <- ddply(dataCombined, .(SubjectID, Activity), colMeans)
 
-## Replace Activity column numbers with Activity Labels
+## Replace Activity column numeric values with Activity Labels
 ##
 dataMeans[,2] <- act_labels[dataMeans[,2],2]
 
