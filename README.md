@@ -3,13 +3,13 @@ Coursera course project - README file
 
 This is a README for the production of the output file for the Coursera 
 Getting and Cleaning Data course project. The output file is SamsungDataAverages.txt.
-The run_activity.R file is the R script producing the output from the source data. 
+The run_analysis.R file is the R script producing the output from the source data. 
 The accompanying Codebook file provides more details on the output file. 
 
 The source data is from:
 <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
 
-SamsungDataAverages.txt is produced by running the run_activity.R script in the 
+SamsungDataAverages.txt is produced by running the run_analysis.R script in the 
 working directory where the above source data .zip has been extracted. 
 
 The zip source file contains measurement data, taken from 30 subjects doing various

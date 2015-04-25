@@ -6,7 +6,7 @@ output: html_document
 This is a codebook for the final production and output file for the Coursera 
 Getting and Cleaning Data course project. The output file is SamsungDataAverages.txt.
 The accompanying Readme.md file provides more details on the R script and 
-production. The run_activity.R file is the R script. 
+production. The run_analysis.R file is the R script. 
 
 The source data is from:
 <https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip>
