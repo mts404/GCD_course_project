@@ -11,7 +11,7 @@
 ## and standard deviations. Then the data will be condensed to take the mean of these
 ## means and standard deviations, for each subject (user) for each activity.
 ##
-## The final result is then written to a local txt file: SamsungDataAverages.txt 
+## The final result is then written to a local txt file: SamsungDataAverages.txt
 
 ## Clear local variables
 rm(list = ls())
@@ -22,14 +22,14 @@ library(plyr)
 ## Read in the values from the ./ directory
 ##
 features <- read.table("features.txt")
-features <- as.character(features[,2])   ## Convert from a factor to character
+features <- as.character(features[,2])   ## Convert factor to character
 act_labels <- read.table("activity_labels.txt")
 
-## Go through both test and train directories to process 3 files in each
+## Go through both test and train directories to process and combine 3 files in each
 ##
 for(i in c("test", "train")) {
       
-      ## Create file-path and names to use for files with text and trial
+      ## Create file-path and names to use for files in test and train
       x_filename <- paste0(i, "/x_", i, ".txt")
       y_filename <- paste0(i, "/y_", i, ".txt") 
       s_filename <- paste0(i, "/subject_", i, ".txt") 
@@ -60,7 +60,7 @@ dataMeans <- ddply(dataCombined, .(SubjectID, Activity), colMeans)
 ##
 dataMeans[,2] <- act_labels[dataMeans[,2],2]
 
-## Create more descriptive variable (column) names
+## Create more descriptive and cleaner variable (column) names
 ##
 columnnames <- names(dataMeans)
 columnnames <- gsub("\\.\\.", "", columnnames)
