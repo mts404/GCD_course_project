@@ -33,19 +33,19 @@ deviation (std) measurements, per SubjectID & Activity. Some of the variables
 Each column contains a single measurement value for the unique SubjectID & Activity 
 pair. Here is a summary of all the measurement variables [with column numbers]:
 
-- [3-8] "timeBodyAcc" : mean and standard deviation means for X, Y, Z axis; time-based measurement for body acceleration  
-- [9-14] "timeGravityAcc" : mean and standard deviation means for X, Y, Z axis; time-based measurement for gravity acceleration         
-- [15-20] "timeBodyAccJerk" : mean and standard deviation means for X, Y, Z, axis; time-based measurement for jerk-movement acceleration      
-- [21-26] "timeBodyGyro" : mean and standard deviation means for X, Y, Z, axis; time-based measurement for gyroscopic body movement          
-- [27-32] "timeBodyGyroJerk" : mean and standard deviation means for X, Y, Z, axis; time-based measurement for gyroscopic jerk-movement      
+- [3-8] "timeBodyAcc" : mean and standard deviation means for X, Y, Z axis; time-based measurements for body acceleration  
+- [9-14] "timeGravityAcc" : mean and standard deviation means for X, Y, Z axis; time-based measurements for gravity acceleration         
+- [15-20] "timeBodyAccJerk" : mean and standard deviation means for X, Y, Z, axis; time-based measurements for jerk-movement acceleration      
+- [21-26] "timeBodyGyro" : mean and standard deviation means for X, Y, Z, axis; time-based measurements for gyroscopic body movement          
+- [27-32] "timeBodyGyroJerk" : mean and standard deviation means for X, Y, Z, axis; time-based measurements for gyroscopic jerk-movement      
 - [33-34] "timeBodyAccMag.mean" : mean and standard deviation means; time-based body acceleration movement magnitude
 - [35-36] "timeGravityAccMag" : mean and standard deviation means; time-based body acceleration movement magnitude     
 - [37-38] "timeBodyAccJerkMag" : mean and standard deviation means; time-based body acceleration jerk-movement magnitude     
 - [39-40] "timeBodyGyroMag" : mean and standard deviation means; time-based body gyroscopic movement magnitude        
 - [41-42] "timeBodyGyroJerkMag" : mean and standard deviation means; time-based body acceleration movement magnitude    
-- [43-48] "frequencyBodyAcc" : mean and standard deviation means for X, Y, Z axis; frequency-based measurement for body acceleration  
-- [49-54] "frequencyBodyAccJerk" : mean and standard deviation means for X, Y, Z, axis; frequency-based measurement for jerk-movement acceleration      
-- [55-60] "frequencyBodyGyro" : mean and standard deviation means for X, Y, Z, axis; frequency-based measurement for gyroscopic body movement          
+- [43-48] "frequencyBodyAcc" : mean and standard deviation means for X, Y, Z axis; frequency-based measurements for body acceleration  
+- [49-54] "frequencyBodyAccJerk" : mean and standard deviation means for X, Y, Z, axis; frequency-based measurements for jerk-movement acceleration      
+- [55-60] "frequencyBodyGyro" : mean and standard deviation means for X, Y, Z, axis; frequency-based measurements for gyroscopic body movement          
 - [61-62] "frequencyBodyAccMag" : mean and standard deviation means; frequency-based body acceleration movement magnitude
 - [63-64] "frequencyBodyAccJerkMag" : mean and standard deviation means; frequency-based body acceleration jerk-movement magnitude     
 - [65-66] "frequencyBodyGyroMag" : mean and standard deviation means; frequency-based body gyroscopic movement magnitude        
